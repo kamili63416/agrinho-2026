@@ -231,7 +231,7 @@
       color: #2a6e4b;
     }
 
-    /* seção equipamentos */
+    /* seção equipamentos - CENTRALIZADO */
     .equip-section {
       background: #e6f0e2;
       border-radius: 48px;
@@ -240,8 +240,9 @@
     }
 
     .equip-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       gap: 1.8rem;
       margin-top: 2rem;
     }
@@ -254,6 +255,8 @@
       transition: 0.2s;
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.03);
       border-bottom: 4px solid #9fc98b;
+      width: 280px;
+      flex-shrink: 0;
     }
 
     .equip-card i {
@@ -384,6 +387,10 @@
       }
       .btn-group {
         justify-content: center;
+      }
+      .equip-card {
+        width: 100%;
+        max-width: 320px;
       }
     }
   </style>
@@ -605,4 +612,3 @@
   </script>
 </body>
 </html>
-
